@@ -47,7 +47,8 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, don
 
     del = await FilterDb.deleteFilter(message.jid, match[0].replace(/['"“]+/g, ''));
     
-    if (!del) {
+    if (!del) { 'myr'.'theri'.'oombi'
+              
         await message.client.sendMessage(message.jid,Lang.ALREADY_NO_FILTER, MessageType.text)
     } else {
         await message.client.sendMessage(message.jid,Lang.DELETED, MessageType.text)
